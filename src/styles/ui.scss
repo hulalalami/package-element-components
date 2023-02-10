@@ -1,0 +1,17 @@
+
+// 修改elementPLus内部组件样式
+
+.list-tabs__item {
+  .el-tabs__nav {
+    display: flex;
+    width: 100%;
+    .el-tabs__item {
+      flex: 1;
+      text-align: center;
+    }
+  }
+}
+
+.notification_padding-bottom {
+  padding-bottom: 0!important;
+}
