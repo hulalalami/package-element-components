@@ -42,7 +42,10 @@ app.mount('#app')
 
 ## 省市区选择组件
 
-逐级选择省市区（乡镇）
+通过下拉菜单选择省市区三级联动
+
+![](./public/省市区选择.gif)
+
 ### 代码示例
 ```ts
 <div class="choose-area">
@@ -62,11 +65,13 @@ app.mount('#app')
 
 ## 城市选择组件
 
-选择中国所有城市
+按城市和省份选择中国所有城市，支持搜索和跳转
+
+![](./public/城市选择.gif)
 
 ### 代码示例
 ```ts
-<MChooseCity @chooseCity="chooseCity"/>
+<MChoose @chooseCity="chooseCity"/>
 
 <script setup lang="ts">
 
@@ -93,7 +98,9 @@ app.mount('#app')
 
 ## 时间选择组件
 
-继承```el-time-select```所有属性；增加逐级选择时间功能
+继承```el-time-select```所有属性；开始时间和结束时间联动
+
+![](./public/时间选择.gif)
 
 ### 代码示例
 ```ts
@@ -142,7 +149,9 @@ app.mount('#app')
 
 ## 日期选择组件
 
-继承```el-date-picker```所有属性，增加逐级选择日期
+继承```el-date-picker```所有属性；开始日期和结束日期联动
+
+![](./public/日期选择.gif)
 
 ### 代码示例
 ```ts
@@ -180,6 +189,8 @@ app.mount('#app')
 ## 图标选择组件
 点击图标，显示所有按钮；点击图标复制代码
 
+![](./public/复制图标.gif)
+
 
 ### 代码示例
 ```ts
@@ -201,7 +212,9 @@ app.mount('#app')
 | visible | 控制是否显示弹出框 | boolean |
 
 ## 表单组件
-整个多种input模式的表单
+整合多种input模式的表单
+
+![](./public/表单.png)
 
 ### 代码示例
 ```ts
@@ -353,7 +366,7 @@ const data = [
 | children | 子节点     | menu[] |
 
 ## 弹出表单组件
-在```MForm```基础上，增加弹出框
+在```MForm```基础上，dialog弹出框集成表单组件
 
 ### 代码示例
 
@@ -403,6 +416,8 @@ const data = [
 
 ## 通知菜单组件
 点击图标，弹出通知项；点击tabs切换不同通知项
+
+![](./public/通知.gif)
 
 ### 代码示例
 ```ts
@@ -478,6 +493,8 @@ const data = [
 
 ## 表格组件
 整合table，支持数据加载前loading等等
+
+![](./public/表格.png)
 
 ### 代码示例
 ```ts
@@ -681,6 +698,8 @@ interface TableOptions {
 
 ## 趋势标记组件
 表示上升和下降趋势，支持多种自定义
+
+![](./public/趋势选择.png)
 
 ### 代码示例
 ```ts
